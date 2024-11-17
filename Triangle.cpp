@@ -4,8 +4,8 @@
 Triangle::Triangle()
 {
     vertex1 = Point(0, 0);
-    vertex2 = Point(1, 0);
-    vertex3 = Point(0, 1);
+    vertex2 = Point(50, 30);
+    vertex3 = Point(25, 10);
 }
 
 Triangle::Triangle(Point v1, Point v2, Point v3)
