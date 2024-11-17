@@ -35,8 +35,13 @@ double Triangle::perimetro()
     return sideA() + sideB() + sideC();
 }
 
- double Triangle::area()
+double Triangle::area()
 {
     double semiPerimetro = perimetro() * 0.5;
     return sqrt(semiPerimetro * (semiPerimetro-sideA()) * (semiPerimetro-sideB()) * (semiPerimetro-sideC()));
+}
+
+void Triangle::PrintInfo()
+{
+    cout<<"A="<<area()<<", P="<<perimetro()<<endl;
 }

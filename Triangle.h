@@ -27,7 +27,9 @@ class Triangle
     // Calculos
     double perimetro();
     double area();
-    
+
+    // Info
+    void PrintInfo();
 };
 
 #endif

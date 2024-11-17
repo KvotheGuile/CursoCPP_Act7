@@ -6,7 +6,9 @@ using namespace std;
 
 int main()
 {
+    // Triangle 1
     Triangle triangleDefault;
-    cout<<"Triangle 1, A="<<triangleDefault.area()<<", P="<<triangleDefault.perimetro()<<endl;
+    
+    cout<<"Triangle 1 "; triangleDefault.PrintInfo();
     return 0;
 }
