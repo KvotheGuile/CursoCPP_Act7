@@ -29,7 +29,7 @@ class Triangle
     double area();
 
     // Info
-    void PrintInfo();
+    void printInfo();
 
     //Verificacion
     bool verifyTriangle();

@@ -41,9 +41,15 @@ double Triangle::area()
     return sqrt(semiPerimetro * (semiPerimetro-sideA()) * (semiPerimetro-sideB()) * (semiPerimetro-sideC()));
 }
 
-void Triangle::PrintInfo()
+void Triangle::printInfo()
 {
-    cout<<"A="<<area()<<", P="<<perimetro()<<endl;
+    if(verifyTriangle())
+    {
+        cout<<"A="<<area()<<", P="<<perimetro()<<endl;
+        return;
+    }
+    
+    cout<<"The given points do not make a real triangle"<<endl;
 }
 
 bool Triangle::verifyTriangle()
