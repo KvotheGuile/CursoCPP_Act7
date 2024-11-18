@@ -48,13 +48,7 @@ void Triangle::PrintInfo()
 
 bool Triangle::verifyTriangle()
 {
-    if(
-        (vertex1.compareX(vertex2) && vertex1.compareX(vertex3)) ||
-        (vertex1.compareY(vertex2) && vertex1.compareY(vertex3)) ||
-        (vertex1.compareX(vertex2) && vertex1.compareY(vertex2)) ||
-        (vertex3.compareX(vertex2) && vertex3.compareY(vertex2)) ||
-        (vertex1.compareX(vertex3) && vertex1.compareY(vertex3)) 
-    )
+    if (area() <= 0)
     {
         return false;
     }
