@@ -54,5 +54,6 @@ void Triangle::printInfo()
 
 bool Triangle::verifyTriangle()
 {
+    // Si el área del triangulo no es mayor a cero, no es un triangulo real.
     return area() > 0;
 }
