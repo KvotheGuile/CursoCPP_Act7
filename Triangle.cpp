@@ -54,10 +54,5 @@ void Triangle::printInfo()
 
 bool Triangle::verifyTriangle()
 {
-    if (area() <= 0)
-    {
-        return false;
-    }
-    
-    return true;
+    return area() > 0;
 }
