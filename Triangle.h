@@ -30,6 +30,9 @@ class Triangle
 
     // Info
     void PrintInfo();
+
+    //Verificacion
+    bool verifyTriangle();
 };
 
 #endif

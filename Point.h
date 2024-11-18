@@ -35,6 +35,10 @@ class Point
 
     // Info
     void print();
+
+    //Comparaciones
+    bool compareX(Point other);
+    bool compareY(Point other);
 };
 
 #endif

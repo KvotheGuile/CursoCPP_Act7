@@ -45,3 +45,19 @@ void Triangle::PrintInfo()
 {
     cout<<"A="<<area()<<", P="<<perimetro()<<endl;
 }
+
+bool Triangle::verifyTriangle()
+{
+    if(
+        (vertex1.compareX(vertex2) && vertex1.compareX(vertex3)) ||
+        (vertex1.compareY(vertex2) && vertex1.compareY(vertex3)) ||
+        (vertex1.compareX(vertex2) && vertex1.compareY(vertex2)) ||
+        (vertex3.compareX(vertex2) && vertex3.compareY(vertex2)) ||
+        (vertex1.compareX(vertex3) && vertex1.compareY(vertex3)) 
+    )
+    {
+        return false;
+    }
+    
+    return true;
+}

@@ -54,3 +54,11 @@ void Point::print()
 {
     cout<<"("<<x<<", "<<y<<")"<<endl;
 }
+
+bool Point::compareX(Point other){
+    return x == other.x;
+}
+
+bool Point::compareY(Point other){
+    return y == other.y;
+}
